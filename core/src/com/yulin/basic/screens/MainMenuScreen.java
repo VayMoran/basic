@@ -1,9 +1,10 @@
-package com.yulin.basic;
+package com.yulin.basic.screens;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.yulin.basic.Basic;
 
 public class MainMenuScreen implements Screen {
     final Basic game;
@@ -29,7 +30,7 @@ public class MainMenuScreen implements Screen {
         camera.update();
 
         if(Gdx.input.isTouched()){
-            game.setScreen(new LevelScreen(game));
+            game.setScreen(new LevelScreen());
             dispose();
         }
     }

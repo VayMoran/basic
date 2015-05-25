@@ -1,6 +1,7 @@
 package com.yulin.basic;
 
 import com.badlogic.gdx.Game;
+import com.yulin.basic.screens.MainMenuScreen;
 
 public class Basic extends Game {
 

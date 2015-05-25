@@ -1,5 +1,4 @@
 package com.yulin.basic.desktop;
-
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 import com.yulin.basic.Basic;
@@ -9,7 +8,7 @@ public class DesktopLauncher {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		config.height=720;
 		config.width=1280;
-		config.resizable = false;
+		config.fullscreen=true;
 		new LwjglApplication(new Basic(), config);
 	}
 }
